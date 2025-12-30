@@ -1,0 +1,55 @@
+{
+  "version": "0.1.0",
+  "questions": [
+    {
+      "id": "q_energy",
+      "title": "你现在精力状态如何？",
+      "type": "single",
+      "options": [
+        { "id": "low",  "text": "很低（想躺）", "score": { "energy": -2, "fatigue": 2 } },
+        { "id": "mid",  "text": "一般（能做但不兴奋）", "score": { "energy": 0, "fatigue": 0 } },
+        { "id": "high", "text": "很足（状态在线）", "score": { "energy": 2, "fatigue": -1 } }
+      ]
+    },
+    {
+      "id": "q_focus",
+      "title": "你现在专注度如何？",
+      "type": "single",
+      "options": [
+        { "id": "scattered", "text": "很分散（坐不住）", "score": { "focus": -2 } },
+        { "id": "ok",        "text": "还可以",           "score": { "focus": 0 } },
+        { "id": "deep",      "text": "很专注（能深度工作）", "score": { "focus": 2 } }
+      ]
+    },
+    {
+      "id": "q_stress",
+      "title": "你现在压力水平？",
+      "type": "single",
+      "options": [
+        { "id": "low",  "text": "不太有压力", "score": { "stress": 0 } },
+        { "id": "mid",  "text": "有点紧绷",   "score": { "stress": 2 } },
+        { "id": "high", "text": "很大（顶着做事）", "score": { "stress": 4 } }
+      ]
+    },
+    {
+      "id": "q_mood",
+      "title": "你现在情绪如何？",
+      "type": "single",
+      "options": [
+        { "id": "down", "text": "偏低落", "score": { "mood": -2 } },
+        { "id": "flat", "text": "平稳",   "score": { "mood": 0 } },
+        { "id": "up",   "text": "不错",   "score": { "mood": 2 } }
+      ]
+    },
+    {
+      "id": "q_social",
+      "title": "你今天更想社交还是独处？",
+      "type": "single",
+      "options": [
+        { "id": "alone",  "text": "想独处", "score": { "social": -1 } },
+        { "id": "either", "text": "都可以", "score": { "social": 0 } },
+        { "id": "social", "text": "想社交", "score": { "social": 2 } }
+      ]
+    }
+  ]
+}
